@@ -1,0 +1,28 @@
+
+<div class="divider"></div>
+<div class="row container varblue varwhite-t" style="padding:1rem; margin-top:1rem">
+
+    <form class="col s12 " style="padding:1rem";  id="edit-post-form">
+        <div class="varblack" style="padding:1rem; margin:1rem">
+            <h5 style="text-align:center"> Revise post: </h5>
+        </div>
+        <div class="row varblack" style="padding:1rem; margin:1rem">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s11 ">
+                        <input value="{{editPosts.topic}}" data-set="{{editPosts.id}}" id="editTopic" type="text" class="validate varwhite-t"/>
+                        <label for="Comment" class="varwhite-t">Subject</label>
+                    </div>
+                    <div class="input-field col s11 varwhite-t">
+                        <input value="{{editPosts.content}}" id="editContent" type="text" class="validate varwhite-t" />
+                        <label for="Comment">Post</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-green" type="submit" name="action">
+                    Press to Submit
+                </button>
+            </form>
+        </div>
+</div>
+
+<script src="/js/edit-blog-post.js"></script>
