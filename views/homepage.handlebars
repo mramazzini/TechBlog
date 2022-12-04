@@ -1,0 +1,11 @@
+<div style="margin:1rem"></div>
+<p class="center container varblue flow-text" style="border-radius:10px; padding:20px">Welcome to Just Another Tech Blog!
+    
+    <br>
+    You can post about anything you want related to technology!
+</p>
+<div class="container">
+{{#each blogPosts as |blogPost|}}
+{{> blog_post}}
+{{/each}}
+</div>
