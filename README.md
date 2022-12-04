@@ -1,4 +1,4 @@
-###Just Another Tech Blog
+#Just Another Tech Blog
 
 ## Description 
 Title speaks for itself! Create an account and start posting.
