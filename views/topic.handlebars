@@ -1,17 +1,17 @@
 <div class="container varblue" style="padding:1rem; margin-top:1rem">
     <div class="card varblack" style="padding:1rem; ">
-        <h2>{{blogPosts.topic}}
+        <h2>Topic: {{blogPosts.topic}}
         </h2>
         <div class="card-content hoverable"style="margin:1rem">
             {{blogPosts.content}}
             <span class="card-title activator "><i class="material-icons right"></i></span>
-            <p>{{format_date blogPosts.date_created}}</p>
+            <p>Date: {{format_date blogPosts.date_created}}</p>
             <p>Posted By: {{blogPosts.user.name}}</p>
         </div>
     </div>
-    <div class="row"></div>
+    <div class="row" style="font-size:3rem; font-weight:bold"> Comments</div>
     {{#each blogPosts.comments as |comment|}}
-    <div class="card yellow lighten-4">
+    <div class="card varblack">
         <div class="card-content hoverable">
             <p>{{comment.response}}</p>
             <p>Date Posted: {{format_date comment.date_created}}</p>
